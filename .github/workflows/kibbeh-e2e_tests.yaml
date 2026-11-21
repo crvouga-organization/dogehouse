@@ -13,6 +13,8 @@ on:
     paths:
       - 'kousa/lib/**'
       - 'kibbeh/src/**'
+permissions: write-all
+
 jobs:
   end-to-end-tests:
     name: end-to-end-tests

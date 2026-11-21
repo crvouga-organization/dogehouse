@@ -3,6 +3,8 @@ name: global:label_pr
 on:
   - pull_request_target
 
+permissions: write-all
+
 jobs:
   triage:
     runs-on: ubuntu-latest

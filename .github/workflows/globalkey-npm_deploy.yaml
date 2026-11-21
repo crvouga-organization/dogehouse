@@ -5,6 +5,8 @@ on:
       - "globalkey/**"
     branches:
       - staging
+permissions: write-all
+
 jobs:
   npm-publish:
     name: npm-publish

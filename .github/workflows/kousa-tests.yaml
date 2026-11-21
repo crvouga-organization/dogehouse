@@ -10,6 +10,8 @@ on:
       - staging
     paths:
       - 'kousa/lib/**'
+permissions: write-all
+
 jobs:
   test:
     name: test-elixir

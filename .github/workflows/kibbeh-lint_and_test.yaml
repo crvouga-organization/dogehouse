@@ -12,6 +12,8 @@ on:
     paths:
       - "kibbeh/**"
 
+permissions: write-all
+
 jobs:
   test:
     name: lint-and-test-kibbeh
