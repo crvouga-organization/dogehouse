@@ -14,8 +14,13 @@ on:
 
 permissions: write-all
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
+    timeout-minutes: 30
     name: lint-and-test-kibbeh
     runs-on: ubuntu-latest
     steps:
